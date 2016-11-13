@@ -39,6 +39,7 @@ var BeerReviewApp = function(){
 
 var beerApp = BeerReviewApp();
 
+//bind post button to function
 $('.post-beer').click(function() {
   event.preventDefault();
   
@@ -56,6 +57,7 @@ $('.post-beer').click(function() {
   $('input').val(''); //clear input text fields
 });
 
+//bind sort button to function
 $('.sort-beer-list').click(function(){
   event.preventDefault();
   beerApp.sortListByRevivew();
